@@ -121,11 +121,9 @@ Citizen.CreateThread(function()
 end)
 
 
-
 RegisterCommand("loadskin", function(source, args, rawCommand)
-    TriggerServerEvent("redemrp_skin:loadSkin", function(cb)
+    TriggerServerEvent("RedEM:server:LoadSkin")
         end)
-end)
 
 RegisterNetEvent('redemrp_skin:LoadSkinClient')
 AddEventHandler('redemrp_skin:LoadSkinClient', function()
